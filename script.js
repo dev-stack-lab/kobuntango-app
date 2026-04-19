@@ -47,7 +47,7 @@ function saveProgress() {
 }
 
 function loadProgress() {
-    const saved = localStorage.getItem('study_progress');
+    const saved = localStorage.getItem('kobun_progress');
     if (!saved) return false;
     const data = JSON.parse(saved);
     unlearnedWords = data.unlearnedWords || [];
