@@ -1,5 +1,5 @@
 let allWords = [], unlearnedWords = [], mistakeWords = [];
-let favoriteIds = JSON.parse(localStorage.getItem('fav_ids')) || [];
+let favoriteIds = JSON.parse(localStorage.getItem('kobun_favs')) || [];
 let historyStack = [];
 let forwardStack = [];
 let isShuffle = false;
