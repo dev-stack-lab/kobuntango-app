@@ -1,5 +1,5 @@
 let allWords = [], unlearnedWords = [], mistakeWords = [];
-let favoriteIds = JSON.parse(localStorage.getItem('kobun_favs')) || [];
+let favoriteIds = JSON.parse(localStorage.getItem('fav_ids')) || [];
 let historyStack = [];
 let forwardStack = [];
 let isShuffle = false;
@@ -47,7 +47,7 @@ function saveProgress() {
 }
 
 function loadProgress() {
-    const saved = localStorage.getItem('kobun_progress');
+    const saved = localStorage.getItem('study_progress');
     if (!saved) return false;
     const data = JSON.parse(saved);
     unlearnedWords = data.unlearnedWords || [];
