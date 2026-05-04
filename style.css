@@ -116,7 +116,14 @@ body {
 }
 .fav-btn.active { color: #fbbf24; transform: scale(1.1); }
 
-#word-display { font-size: 3.8rem; margin: 0; color: #0f172a; font-weight: 600; letter-spacing: -0.5px; }
+/* style.css の該当箇所をこのように書き換えてください */
+#word-display { 
+    font-size: 2.2rem !important; /* 数値を思い切り小さくし、!importantを追加 */
+    margin: 0; 
+    color: #0f172a; 
+    font-weight: 600; 
+    letter-spacing: -0.5px;
+}
 .meaning { font-size: 2rem; color: #ef4444; font-weight: 600; }
 
 
